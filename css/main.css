@@ -69,7 +69,7 @@ input{font-family: 'Pretendard', sans-serif;}
 #menu_list > .inner{position: relative;}
 #menu_list .menu_list_slide .slick-list{max-width: 760px; margin:0 auto;}
 #menu_list .menu_list_slide .slick-slide{text-align: center;}
-#menu_list .menu_list_slide .img_box{ width: 130px; height: 130px;  border-radius: 50%; border:1px solid rgb(255, 255, 255);  box-shadow: 10.607px 10.607px 20px 0px rgba(32, 32, 32, 0.08); padding:30px;}
+#menu_list .menu_list_slide .img_box{ width: 130px; height: 130px;  border-radius: 50%; border:1px solid rgb(255, 255, 255);  box-shadow: 10px 10px 20px 0px rgba(32, 32, 32, 0.08); padding:30px;}
 #menu_list .menu_list_slide .txt_box{
     font-family: 'Pretendard', sans-serif;
     font-size: 2.2rem;
@@ -223,6 +223,23 @@ input{font-family: 'Pretendard', sans-serif;}
 
 #direct_info .right_box .confir_bkng_form input{width: 100%; border:0; text-indent: 16px; border-radius: 10px; padding:15px 0; color:#333; }
 
+#quick_menu{position: fixed; left:92%; top:158px; z-index: 999;}
+#quick_menu .box{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family:'Pretendard', sans-serif; font-size: 1.5rem;
+    padding:6px;
+    box-shadow: 10px 10px 20px 0px rgba(32, 32, 32, 0.2);
+}
+#quick_menu .top_cont{ padding:5px;}
+#quick_menu .top_cont a{margin-bottom:10px; display: flex; flex-direction: column; align-items: center; color:#333; }
+#quick_menu .top_cont .img_box{width: 70px; height: 70px; border-radius: 50%; display: flex; justify-content: center ; align-items: center; padding:15px;}
+#quick_menu .top_cont a:nth-child(1) .img_box{background-color:#715CB8 ;}
+#quick_menu .top_cont a:nth-child(2) .img_box{background-color:#FC4183 ;}
+#quick_menu .top_cont a:nth-child(3) .img_box{background-color:#9C7B36 ;}
+#quick_menu .top_cont a:nth-child(4) .img_box{background-color:#00823E ;}
+#quick_menu .top_cont .txt{padding-top:10px; text-align: center;}
+#quick_menu .go_to_top{ width: 100%; background-color: #585858; color:#fff; text-align: center; border-radius: 20px; padding:5px;}
 
 /* 버튼 공통 */
 .btn{padding:10px 0 8px 20px; border:1px solid #333; border-radius: 10px; font-family: 'Pretendard', sans-serif; font-size: 2.4rem;}
@@ -311,6 +328,9 @@ input{font-family: 'Pretendard', sans-serif;}
 @media screen and (max-width : 1024px){
     /* sub_visual */
     #sub_visual .right_box > .box{width: 100%;}
+
+    /* quick_menu */
+    #quick_menu{display: none;}
 }
 @media screen and (max-width : 760px){
     #direct_info .right_box{width: 90%; margin:0 auto;}
